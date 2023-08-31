@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+  }
+  
+  header {
+   background-color: rgb(0, 0, 0);
+    color: #817f7f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  nav {
+    
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  nav ul:nth-child(1),
+  nav ul:nth-child(2) {
+    margin-right: auto; /* Empuja los elementos a la izquierda */
+  }
+  
+  nav ul:nth-child(3),
+  nav ul:nth-child(4) {
+    margin-left: auto; /* Empuja los elementos a la derecha */
+  }
+  
+  nav ul:nth-child(2),
+  nav ul:nth-child(4) {
+    margin-left: auto; /* Alinea los elementos a la derecha */
+  }
+
+  nav ul li {
+    margin-right: 20px;
+    
+  }
+  
+  .nav_li a {
+    color: rgb(82, 82, 82);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .nav_li a:hover {
+    color: rgb(225, 226, 226);
+  }
+      
+  .logo {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    
+    margin: 0 20px;
+  }
+  
+  .slider {
+    margin-top: -0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 740px;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 10s infinite;
+  }
+
+  .slider img {
+    max-width:50%;
+    max-height: none;
+  }
+  
+  .registration-form {
+    background-color: rgba(143, 141, 141, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align:justify;
+    box-shadow: 0px 0px 20px 10px  black ;
+  }
+  
+  @keyframes slideshow {
+    0%, 100% {
+      background-image: url('/imagenes/barberia2_3.jpg');
+    }
+    25% {
+      background-image: url('/imagenes/Barberia_2.webp');
+    }
+    50% {
+      background-image: url('/imagenes/tecnicas-barberia_2.webp');
+    }
+    75% {
+      background-image: url('/imagenes/barber_4.jpeg');
+    }
+  }
+  
+  .social-menu {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .social-menu a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:larger;
+    color: #ffffff;
+    text-decoration:underline ;
+    margin: 0 25px;
+    transition: color 0.5s; /* Agregamos una transición suave al color */
+  }
+
+  
+  /* Cambia el color al pasar el mouse */
+  .social-menu a:hover {
+    color: aqua; 
+    
+  }
+  
+  
+  .historia {
+    padding: 20px;
+  }
+  
+  aside {
+    width: 30%;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .gallery img {
+    width:30%;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .schedule-table {
+    border-collapse:separate;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0px 0px 15px 10px rgb(27, 27, 27) ;
+  }
+  
+  .schedule-table th, .schedule-table td {
+    width: 100px;
+    color: #ffffff;
+    background-color: #474849;
+    border: 1px solid #ddd;
+    padding: 2px;
+    
+  }
+  
+  .schedule-table th {
+    background-color: #0a0a0a;
+  }
+  
+  .schedule-table td:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+    
+  }
+  .schedule-table td.filled {
+    background-color: #a80e0e; /* Puedes cambiar el color a tu gusto */
+    cursor: pointer;
+  }
+
+  .schedule-table td{
+border-style: dotted;
+}
+
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(95, 95, 95, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  }
+
+  #carouselExampleIndicators {
+    width: 33%;
+  }
+
+  .team-member-wrap{
+    
+    width: 119%;
+    
+  }
+
+  .teammember-list {
+    width: 80%;
+  }
+
+  .item {
+    align-content: center;
+    width: 30%;
+    display:inline-flex;
+  }
+
+  .getintouch-logo{
+
+    width: 70%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #footer-wrapper {
+    padding: 0%;
+  }
+
+  .news-thumb img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .post-meta {
+    font-size: 20px;
+  }
