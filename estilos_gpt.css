@@ -7,7 +7,7 @@
   .bypostauthor{ margin:0; padding:0;}
   section img, img{ width:100%; height:auto; display:block; }
   h1,h2,h3,h4,h5,h6{ margin:0 0 20px; padding:0; line-height:1; font-weight:700; }
-  h1{ font-size:32px;}
+  h1{ font-size:100%;}
   h2{ font-size:24px;}
   h3{ font-size:20px;}
   h4{ font-size:18px;}
@@ -86,11 +86,13 @@
   /*===============================================
   ** Site Logo Css
   *===============================================*/
-  .logo{ text-align:left; padding:0; position:relative; -webkit-transition:0.3s; transition:0.3s; margin:10px 5px; }
+  .logo{ text-align:center; padding:0; position:relative; -webkit-transition:0.3s; transition:0.3s; margin:1px 1px; width: 20%; }
   .logo img{ width:auto; height:auto; display:block; }
-  .logo h1{ font-weight:700; margin:0; font:400 44px/1 'Lato'; color:#ffffff; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-transform:uppercase; }
+  .logo h1{ font-weight:10%; margin:0;  color:#bebcbc; text-overflow:ellipsis; overflow:unset; white-space:nowrap;
+     text-transform:uppercase;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
   .logo a{ display:block; }
   .logo p{ color:#000000; display:block; font:400 14px/16px 'Karla'; margin:5px 0 0; }
+  
   
   /*===============================================
   ** Navigation Css
@@ -1291,11 +1293,13 @@ nav ul:nth-child(4) {
 }
 
 nav ul li {
+  width: 100%;;
   margin-right: 20px;
   
 }
 
 .nav_li a {
+  
   color: rgb(82, 82, 82);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size:larger;
@@ -1307,12 +1311,7 @@ nav ul li {
   color: rgb(225, 226, 226);
 }
     
-.logo {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 30px;
-  
-  margin: 0 20px;
-}
+
 
 .slider {
   margin-top: -0px;
